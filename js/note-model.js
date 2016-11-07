@@ -1,6 +1,7 @@
 (function(exports){
   function takeNote(note){
-    var text = String(note);
+    this.text = String(note);
+    return this.text;
   };
   function returnNote(note){
     return note;
