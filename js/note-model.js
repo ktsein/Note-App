@@ -1,13 +1,18 @@
 (function(exports){
-  function note(){
+
+  function Note(){
     this.text
   }
-  note.prototype.takeNote = function(note){
-      this.text = String(note);
-    }
-  note.prototype.returnNote = function(){
-      return this.text;
-    }
+  Note.prototype.takeNote = function(text){
+    this.text = String(text);
+  }
+  Note.prototype.returnNote = function(){
+    return this.text;
+  }
+  exports.Note = Note;
 
-  exports.note = note;
 })(this);
+
+// -- Note --
+
+//javascript is sexy. "this".
