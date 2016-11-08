@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <intercept-url pattern="/favicon.ico" access="ROLE_ANONYMOUS" />
     <script type="text/javascript" src="test/assert.js"></script>
     <script type="text/javascript" src="js/note-model.js"></script>
     <script type="text/javascript" src="js/note-list-model.js"></script>
@@ -9,9 +10,12 @@
     <script type="text/javascript" src="test/note_model_spec.js"></script>
     <script type="text/javascript" src="test/note_list_model_spec.js"></script>
     <script type="text/javascript" src="test/note_list_view_spec.js"></script>
-    <title></title>
+    <title>Note App</title>
   </head>
   <body>
+    <h1>Notes</h1>
+    <div id="noteListDiv">
 
+    </div>
   </body>
 </html>
